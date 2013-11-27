@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Basic Close Combat.png</Source>
+      <Name>Basic Close Combat</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Basic Close Combat.xnb</Output>
+      <Time>2013-06-17T21:14:24-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Rafflesia.png</Source>
+      <Name>Rafflesia</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Rafflesia.xnb</Output>
+      <Time>2013-08-01T08:29:18-04:00</Time>
+    </Item>
+    <Item>
+      <Source>blueturn.png</Source>
+      <Name>blueturn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\blueturn.xnb</Output>
+      <Time>2013-08-01T08:36:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Buns.png</Source>
+      <Name>Buns</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Buns.xnb</Output>
+      <Time>2013-08-01T08:36:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>C.png</Source>
+      <Name>C</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\C.xnb</Output>
+      <Time>2013-08-01T08:36:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>F.png</Source>
+      <Name>F</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\F.xnb</Output>
+      <Time>2013-08-01T08:36:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>M.png</Source>
+      <Name>M</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\M.xnb</Output>
+      <Time>2013-08-01T08:36:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>purpturn.png</Source>
+      <Name>purpturn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\purpturn.xnb</Output>
+      <Time>2013-08-01T08:36:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>redturn.png</Source>
+      <Name>redturn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\redturn.xnb</Output>
+      <Time>2013-08-01T08:36:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>VC.png</Source>
+      <Name>VC</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\VC.xnb</Output>
+      <Time>2013-08-01T08:36:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>VF.png</Source>
+      <Name>VF</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\VF.xnb</Output>
+      <Time>2013-08-01T08:36:10-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Slime.png</Source>
+      <Name>Slime</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Slime.xnb</Output>
+      <Time>2013-11-21T15:57:30.3501046-05:00</Time>
+    </Item>
+    <Item>
+      <Source>MainScreen.png</Source>
+      <Name>MainScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\MainScreen.xnb</Output>
+      <Time>2013-08-06T11:35:12-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Arial.spritefont</Source>
+      <Name>Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Arial.xnb</Output>
+      <Time>2013-11-18T16:24:06.337415-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Slash.png</Source>
+      <Name>Slash</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Slash.xnb</Output>
+      <Time>2013-11-16T21:03:14.957069-05:00</Time>
+    </Item>
+    <Item>
+      <Source>BeginnerMeadowsBackground.png</Source>
+      <Name>BeginnerMeadowsBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\BeginnerMeadowsBackground.xnb</Output>
+      <Time>2013-11-17T12:58:02.4306444-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Skillbox.png</Source>
+      <Name>Skillbox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Skillbox.xnb</Output>
+      <Time>2013-11-18T15:46:00.2756597-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Impact.spritefont</Source>
+      <Name>Impact</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Impact.xnb</Output>
+      <Time>2013-11-18T16:30:40.4139549-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Arrow.png</Source>
+      <Name>Arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Arrow.xnb</Output>
+      <Time>2013-11-20T21:01:56.3303428-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Trainee.png</Source>
+      <Name>Trainee</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Trainee.xnb</Output>
+      <Time>2013-11-21T15:46:40.4979351-05:00</Time>
+    </Item>
+    <Item>
+      <Source>ArrowBullet.png</Source>
+      <Name>ArrowBullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\ArrowBullet.xnb</Output>
+      <Time>2013-11-22T17:28:50.9566081-05:00</Time>
+    </Item>
+    <Item>
+      <Source>ArrowBulletSheet.png</Source>
+      <Name>ArrowBulletSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\ArrowBulletSheet.xnb</Output>
+      <Time>2013-11-24T12:32:24.644801-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg0.png</Source>
+      <Name>Dmg0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg0.xnb</Output>
+      <Time>2013-11-23T17:38:21.5867248-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg1.png</Source>
+      <Name>Dmg1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg1.xnb</Output>
+      <Time>2013-11-23T18:09:58.1402015-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg2.png</Source>
+      <Name>Dmg2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg2.xnb</Output>
+      <Time>2013-11-23T18:09:58.6832325-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg3.png</Source>
+      <Name>Dmg3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg3.xnb</Output>
+      <Time>2013-11-23T17:38:21.590725-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg4.png</Source>
+      <Name>Dmg4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg4.xnb</Output>
+      <Time>2013-11-23T17:38:21.5917251-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg5.png</Source>
+      <Name>Dmg5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg5.xnb</Output>
+      <Time>2013-11-23T17:38:21.5937252-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg6.png</Source>
+      <Name>Dmg6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg6.xnb</Output>
+      <Time>2013-11-23T17:38:21.5947253-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg7.png</Source>
+      <Name>Dmg7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg7.xnb</Output>
+      <Time>2013-11-23T17:38:21.5957253-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg8.png</Source>
+      <Name>Dmg8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg8.xnb</Output>
+      <Time>2013-11-23T17:38:21.5977254-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Dmg9.png</Source>
+      <Name>Dmg9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Dmg9.xnb</Output>
+      <Time>2013-11-23T17:38:21.5987255-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Miss.png</Source>
+      <Name>Miss</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Miss.xnb</Output>
+      <Time>2013-11-23T17:38:21.5997255-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Hit.png</Source>
+      <Name>Hit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Hit.xnb</Output>
+      <Time>2013-11-24T11:55:11.6370803-05:00</Time>
+    </Item>
+    <Item>
+      <Source>ThornSheet.png</Source>
+      <Name>ThornSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\ThornSheet.xnb</Output>
+      <Time>2013-11-24T19:12:26.0946055-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Bar.png</Source>
+      <Name>Bar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Bar.xnb</Output>
+      <Time>2013-11-25T17:35:37.7720036-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Fillbar.png</Source>
+      <Name>Fillbar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\Fillbar.xnb</Output>
+      <Time>2013-11-25T17:43:04.6385629-05:00</Time>
+    </Item>
+    <Item>
+      <Source>BarEnd.png</Source>
+      <Name>BarEnd</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\BarEnd.xnb</Output>
+      <Time>2013-11-25T17:46:05.1328866-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\OnslaughtContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\OnslaughtContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Keshanz\Documents\Visual Studio 2010\Projects\Onslaught\Onslaught\Onslaught\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-10-21T17:52:42.8774942-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
