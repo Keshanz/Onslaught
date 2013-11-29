@@ -11,11 +11,9 @@ Content\VC.xnb
 Content\VF.xnb
 Content\Slime.xnb
 Content\MainScreen.xnb
-Content\Arial.xnb
 Content\Slash.xnb
 Content\BeginnerMeadowsBackground.xnb
 Content\Skillbox.xnb
-Content\Impact.xnb
 Content\Arrow.xnb
 Content\Trainee.xnb
 Content\ArrowBullet.xnb
@@ -36,3 +34,5 @@ Content\ThornSheet.xnb
 Content\Bar.xnb
 Content\Fillbar.xnb
 Content\BarEnd.xnb
+Content\Arial.xnb
+Content\Impact.xnb

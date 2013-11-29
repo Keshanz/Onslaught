@@ -6,12 +6,14 @@ using Microsoft.Xna.Framework;
 
 namespace Onslaught
 {
-    class Char:Unit,IComparable
+    public class Char:Unit,IComparable
     {
 
         //static Dictionary<String, Skill> pSkills = new Dictionary<String, Skill>();
         public int exp;
         public int expToLevel;
+        public List<int> probStatGain;
+        
 
         /*
         public static void fillSkills()
@@ -38,8 +40,9 @@ namespace Onslaught
             HP = maxHP = RNG.RandInt(60, 80);
             MP = maxMP = RNG.RandInt(25, 35);
             delay = 30;
-            //filename should be based on class and ?gender?, temporary is rafflesia
+            probStatGain = new List<int>(){65, 20, 40, 30, 40, 20, 20, 40, 20, 50, 30};
             filename = "trainee";
+            type = "Trainee";
             name = "pchar";
             addSkill("Close Quarters");
             addSkill("Lunge");

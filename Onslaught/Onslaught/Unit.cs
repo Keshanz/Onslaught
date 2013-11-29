@@ -43,6 +43,7 @@ namespace Onslaught
         public int number;
         public int affil;
         public string name;
+        public string type;
 
         //for character, level is... level.. and a prerequisite to learning skills, class changing, etc., may also factor into skill dmg/acc or something
         //for monster, level is generally to be used as a stat and exp multiplier of sorts (level 4 is stronger than level 3, etc)
@@ -81,7 +82,7 @@ namespace Onslaught
             skillList = new List<Skill>(1);
             statusList = new statusHolder();
             name = "No name";
-            
+            type = "No class";
             
         }
 
@@ -109,7 +110,7 @@ namespace Onslaught
 
         public override String ToString()
         {
-            return (delay + " " + str + " " + mag + " " + def + " " + fth + " " + spd + "" + HP);
+            return (delay + " " + str + " " + mag + " " + def + " " + fth + " " + spd + "" + maxHP + "" + maxMP);
         }
     }
 }

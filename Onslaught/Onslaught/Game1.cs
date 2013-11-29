@@ -541,21 +541,32 @@ namespace Onslaught
                                             //animation on death!
                                             alphaController = 1;
                                             ShowInfo(eneList[i].name + " has died! " + curUnit.name + " has gained " + ((Monster)(eneList[i])).expOnDeath + " experience!");
-                                            ((Char)curUnit).exp += ((Monster)(eneList[i])).expOnDeath;
-                                            //Level up code goes here!
 
-                                            Console.WriteLine(eneList[i].name + " has died!");
+                                            Char curChar = (Char)curUnit;
+                                            curChar.exp += ((Monster)(eneList[i])).expOnDeath;
+
+                                            while (curChar.exp >= curChar.expToLevel)
+                                            {
+                                                curChar.exp -= curChar.expToLevel;
+                                                curChar.expToLevel = (int)(curChar.expToLevel * 1.11);
+                                                LevelUp(curChar);
+                                            }
+
                                             for (int a = 0; a <= 2; a++)
                                             {
                                                
                                                 DistGrid[eneList[i].number][a] = 0;
                                                 DistGrid[a][eneList[i].number] = 0;
                                             }
+                                            
+
                                             Mons.Remove((Monster) eneList[i]);
                                             AllUnits.Remove(eneList[i]);
                                             eneList.Remove(eneList[i]);
                                             dmgList.RemoveAt(i);
                                             i--;
+
+
                                         }
 
                                     }
@@ -715,7 +726,7 @@ namespace Onslaught
                 for (int b = 0; b < temp[a].Count; b++)
                 {
                     //Console.WriteLine(a);
-                    if ((phase == Phase.Info) && (temp[a][b].HP <= 0))
+                    if (temp[a][b].HP <= 0)
                     {
                         spriteBatch.Draw(spriteList[temp[a][b].filename], new Vector2(disStart + (b * 85), 85 + ((4 - a) * 60)), Color.White * alphaController);
                     }
@@ -765,10 +776,31 @@ namespace Onslaught
                 spriteBatch.Draw(bar, new Rectangle(45, 210 + 180 * i, 100, 15), Color.YellowGreen);
                 spriteBatch.Draw(fillBar, new Rectangle(45, 210 + 180 * i, (int)(99 * P1Chars[i].exp / (double)(P1Chars[i].expToLevel)), 15), new Rectangle(0, 0, (int)(99 * P1Chars[i].exp / (double)(P1Chars[i].expToLevel)), 15), Color.YellowGreen);
                 if ((int)(99 * P1Chars[i].exp / (double)(P1Chars[i].expToLevel)) > 3)  spriteBatch.Draw(barEnd, new Vector2(43 + (int)(99 * P1Chars[i].exp / (double)(P1Chars[i].expToLevel)), 210 + 180 * i), Color.YellowGreen);
+                DrawString(P1Chars[i].HP + "/" + P1Chars[i].maxHP, new Vector2(95, 170 + 180 * i), infoFont);
+                DrawString(P1Chars[i].MP + "/" + P1Chars[i].maxMP, new Vector2(95, 190 + 180 * i), infoFont);
+                //DrawString(P1Chars[i].exp + "/" + P1Chars[i].expToLevel, new Vector2(95, 210 + 180 * i), infoFont);
             }
-            spriteBatch.Draw(bar, new Rectangle(300, 300, 100, 15), Color.Blue);
-            spriteBatch.Draw(fillBar, new Rectangle(300, 300, 90, 15), new Rectangle(0, 0, 90, 15), Color.Blue);
-            spriteBatch.Draw(barEnd, new Vector2(390, 300), Color.Blue);
+            for (int i = 0; i < P2Chars.Count; i++)
+            {
+                spriteBatch.Draw(spriteList[P2Chars[i].filename], new Vector2(895, 70 + 180 * i), Color.White);
+                DrawString(P2Chars[i].name, new Vector2(915, 135 + 180 * i), infoFont);
+                DrawString("Level " + P2Chars[i].level, new Vector2(915, 150 + 180 * i), infoFont);
+                DrawString("HP: ", new Rectangle(855, 170 + 180 * i, 40, 40), infoFont);
+                DrawString("MP: ", new Rectangle(855, 190 + 180 * i, 40, 40), infoFont);
+                DrawString("XP: ", new Rectangle(855, 210 + 180 * i, 40, 40), infoFont);
+                spriteBatch.Draw(bar, new Rectangle(875, 170 + 180 * i, 100, 15), Color.Red);
+                spriteBatch.Draw(fillBar, new Rectangle(875, 170 + 180 * i, (int)(99 * P2Chars[i].HP / (double)(P2Chars[i].maxHP)), 15), new Rectangle(0, 0, (int)(99 * P2Chars[i].HP / (double)(P2Chars[i].maxHP)), 15), Color.Red);
+                if ((int)(99 * P2Chars[i].HP / (double)(P2Chars[i].maxHP)) > 3) spriteBatch.Draw(barEnd, new Vector2(873 + (int)(99 * P2Chars[i].HP / (double)(P2Chars[i].maxHP)), 170 + 180 * i), Color.Red);
+                spriteBatch.Draw(bar, new Rectangle(875, 190 + 180 * i, 100, 15), Color.Blue);
+                spriteBatch.Draw(fillBar, new Rectangle(875, 190 + 180 * i, (int)(99 * P2Chars[i].MP / (double)(P2Chars[i].maxMP)), 15), new Rectangle(0, 0, (int)(99 * P2Chars[i].MP / (double)(P2Chars[i].maxMP)), 15), Color.Blue);
+                if ((int)(99 * P2Chars[i].MP / (double)(P2Chars[i].maxMP)) > 3) spriteBatch.Draw(barEnd, new Vector2(873 + (int)(99 * P2Chars[i].MP / (double)(P2Chars[i].maxMP)), 190 + 180 * i), Color.Blue);
+                spriteBatch.Draw(bar, new Rectangle(875, 210 + 180 * i, 100, 15), Color.YellowGreen);
+                spriteBatch.Draw(fillBar, new Rectangle(875, 210 + 180 * i, (int)(99 * P2Chars[i].exp / (double)(P2Chars[i].expToLevel)), 15), new Rectangle(0, 0, (int)(99 * P2Chars[i].exp / (double)(P2Chars[i].expToLevel)), 15), Color.YellowGreen);
+                if ((int)(99 * P2Chars[i].exp / (double)(P2Chars[i].expToLevel)) > 3) spriteBatch.Draw(barEnd, new Vector2(873 + (int)(99 * P2Chars[i].exp / (double)(P2Chars[i].expToLevel)), 210 + 180 * i), Color.YellowGreen);
+                DrawString(P2Chars[i].HP + "/" + P2Chars[i].maxHP, new Vector2(925, 170 + 180 * i), infoFont);
+                DrawString(P2Chars[i].MP + "/" + P2Chars[i].maxMP, new Vector2(925, 190 + 180 * i), infoFont);
+                //DrawString(P2Chars[i].exp + "/" + P2Chars[i].expToLevel, new Vector2(925, 210 + 180 * i), infoFont);
+            }
 
             spriteBatch.End();
 
@@ -828,7 +860,7 @@ namespace Onslaught
                     break;
                 case Phase.Info:
                     {
-                        alphaController -= (float) (.02);
+                        alphaController -= (float) (.04);
                         spriteBatch.Begin();
                         DrawString(info, new Rectangle(400, 395, 275, 400), infoFont);
                         spriteBatch.End();
@@ -984,6 +1016,12 @@ namespace Onslaught
             ShowInfo(curUnit.name + " retreats from all enemy units.");
             curUnit.delay += 50;
         }
+        protected void MonExecuteSkill(Skill ski)
+        {
+            ShowInfo(curUnit.name + " used " + ski.name);
+            curSkill = ski;
+            ExecuteSkill();
+        }
 
         protected void MonsterAI()
         {
@@ -996,9 +1034,9 @@ namespace Onslaught
                 else if (getDistance(eneList[i]) == 3) numMid++;
                 else if (getDistance(eneList[i]) >= 1) numClose++;
             }
-            switch (curUnit.filename)
+            switch (curUnit.type)
             {
-                case "buns":
+                case "Buns":
                     {
                         if ((numClose <= 1)||(numMid>=3))
                         {
@@ -1006,10 +1044,7 @@ namespace Onslaught
                         }
                         else if (RNG.RandInt(1, 100) <= 90)
                         {
-                            //could literally just make the skill here but whatevs
-                            ShowInfo(curUnit.name + " used " + curUnit.skillList[0].name);
-                            curSkill = curUnit.skillList[0];
-                            ExecuteSkill();
+                            MonExecuteSkill(curUnit.skillList[0]);
                         }
                         else
                         {
@@ -1018,7 +1053,7 @@ namespace Onslaught
                         }
                     }
                     break;
-                case "rafflesia":
+                case "Rafflesia":
                     {
                         if (numFar <= 1)
                         {
@@ -1026,9 +1061,7 @@ namespace Onslaught
                         }
                         else if (RNG.RandInt(1, 100) <= 80)
                         {
-                            ShowInfo(curUnit.name + " used " + curUnit.skillList[0].name);
-                            curSkill = curUnit.skillList[0];
-                            ExecuteSkill();
+                            MonExecuteSkill(curUnit.skillList[0]);
                         }
                         else
                         {
@@ -1037,7 +1070,7 @@ namespace Onslaught
                         }
                     }
                     break;
-                case "slime":
+                case "Slime":
                     {
                         if (numFar >= 4)
                         {
@@ -1045,9 +1078,7 @@ namespace Onslaught
                         }
                         else 
                         {
-                            ShowInfo(curUnit.name + " used " + curUnit.skillList[0].name);
-                            curSkill = curUnit.skillList[0];
-                            ExecuteSkill();
+                            MonExecuteSkill(curUnit.skillList[0]);
                         }
                         
                     }
@@ -1055,6 +1086,44 @@ namespace Onslaught
 
 
             }
+        }
+
+        protected void LevelUp(Char cha)
+        {
+            int oldStr = cha.str;
+            int oldMag = cha.mag;
+            int oldDef = cha.def;
+            int oldFth = cha.fth;
+            int oldSpd = cha.spd;
+            int oldLuk = cha.luck;
+            int oldSki = cha.ski;
+            int oldEva = cha.eva;
+            int oldHP = cha.maxHP;
+            int oldMP = cha.maxMP;
+            int oldRec = cha.rec;
+
+            Console.WriteLine(cha);
+            
+            for (int i = 0; i <= 2; i++)
+            {
+                if (RNG.RandInt(1,100) <= cha.probStatGain[0]) cha.str ++;
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[1]) cha.mag++;
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[2]) cha.def++;
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[3]) cha.fth++;
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[4]) cha.ski++;
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[5]) cha.eva++;
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[6]) cha.luck++;
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[7]) cha.spd++;
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[8]) cha.rec++;
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[9]) cha.maxHP += RNG.RandInt(1,4);
+                if (RNG.RandInt(1, 100) <= cha.probStatGain[10]) cha.maxMP += RNG.RandInt(1,2);
+            }
+            cha.level++;
+            Console.WriteLine(cha);
+            
+            ShowInfo("Level up!");
+            //Show a bunch of the level up stuff here, maybe put in like a whole small phase for it. Players should
+            //feel good for leveling up
         }
     }
 }
